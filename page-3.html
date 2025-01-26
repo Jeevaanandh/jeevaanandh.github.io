@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{  
+                text-align: center; 
+                
+            }
+
+             p{
+                text-align: center;
+                font-weight: bold;
+                font-family: cursive;
+            }
+
+            h3{
+                text-align: center;
+                font-family: cursive;
+            }
+
+            button {
+                
+                
+                margin: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #014ff6;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: cursive;
+                
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            #hiddenContent {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent2 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent3 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent4 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent5 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+
+            body {
+                margin: 0;
+                height: 100vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+        </style>
+
+        <script>
+            function Change1() {
+                // Change the background color of the page
+                document.body.style.backgroundImage = "url('image-1.jpg')"; // Light blue
+                
+                // Hide the button
+                document.getElementById("button-1").style.display = "none";
+                document.getElementById("head-1").style.display = "none";
+
+                //To show the hidden content
+                document.getElementById("hiddenContent").style.display = "block";
+            }
+
+            function Change2(){
+                document.getElementById("hiddenContent").style.display = "none";
+
+                document.getElementById("hiddenContent2").style.display = "block";
+
+            }
+
+            function Change3(){
+                document.getElementById("hiddenContent2").style.display = "none";
+
+                document.getElementById("hiddenContent3").style.display = "block";
+            }
+
+            function Change4(){
+                document.getElementById("hiddenContent3").style.display = "none";
+
+                document.getElementById("hiddenContent4").style.display = "block";
+            }
+
+            function Change5(){
+                document.getElementById("hiddenContent4").style.display = "none";
+
+                document.getElementById("hiddenContent5").style.display = "block";
+            }
+
+            function openNewWindow1() {
+                window.open("FunnyPics.html", "_self"); 
+            }
+
+            function openNewWindow2() {
+                window.open("SurprisebutNot.html", "_self"); 
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <br>
+            <br>
+            <h3 id="head-1">Let's change that shall we?</h3> <br> <br> <br>
+            <button onclick="Change1()" id="button-1" title="Click here">Okay!!!</button>
+
+        </div>
+        
+
+        <div id="hiddenContent" class="container">
+            <h3 style="color: white;">WOW!!!</h3> <br>
+            <h3 style="color: white;">It's better now isn't it??</h3> <br> <br> <br>
+            
+            <table style="margin: auto;">
+                <tr>
+                    <button id="button-2" onclick="Change2()" title="Click here">YESSSS!!!</button>
+
+                </tr>
+            </table>
+            
+        </div>
+            
+
+        <div id="hiddenContent2" class="container">
+            <h3 style="color: white;">So... I was thinking</h3> <br> <br>
+            <h3 style="color: white;">It's Shatakshi Verma's Birthday!!!!</h3> <br> <br>
+            <h3 style="color: white;">What should I do??</h3>  <br> <br>
+            <button id="button-3" onclick="Change3()" title="Click here">Next ></button>
+        </div>
+
+
+        <div id="hiddenContent3" class="container">
+            <h3 style="color: white;">Should i buy her something??</h3> <br> <br>
+            <h3 style="color: white;">NO way!!... I have no cash!!</h3> <br> <br>
+            <h3 style="color: white;">And after a lot of thinking, i came to the conclusion</h3>  <br> <br>
+            <button id="button-4" onclick="Change4()" title="Click here">What's that?? ></button>
+            
+        </div>
+
+
+        <div id="hiddenContent4" class="container">
+            <h3 style="color: white;">Make a Website!!!!</h3> <br> <br>
+            <h3 style="color: white;">This way i can show you how much you mean to me</h3> <br> <br>
+            <h3 style="color: white;">And... I also can show you all embarassing pictures  i took of you</h3> <br> <br>
+            <button id="button-5" onclick="Change5()" title="Click here">Next ></button>
+
+        </div>
+
+
+        <div id="hiddenContent5" class="container">
+            <h3 style="color: white;">Now..</h3> <br> <br>
+            <h3 style="color: white;">Where do you want to go first??</h3> <br> <br>
+            <button id="button-6" onclick="openNewWindow1()" title="Click here">Funny pictures of you</button>
+            <button id="button-6" onclick="openNewWindow2()" title="Click here">Special Surprise!!!</button>
+
+        </div>
+    </body>
+</html>

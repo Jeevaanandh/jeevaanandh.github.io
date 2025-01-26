@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button {
+                margin: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #014ff6;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: cursive;
+                
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+
+            body {
+                background-image: url('image-1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed; /* Optional: Makes the background image stay fixed during scrolling */
+            }
+
+
+            .container{  
+                text-align: center; 
+                
+            }
+
+             p{
+                text-align: center;
+                font-weight: bold;
+                font-family: cursive;
+            }
+
+            h3{
+                text-align: center;
+                font-family: cursive;
+                color: white;
+            }
+
+
+            #hiddenContent1 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent2 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent3 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+            #hiddenContent4 {
+                display: none; /* Initially hidden */
+                margin-top: 20px;
+            }
+
+        </style>
+
+        <script>
+            function Change1() {
+                
+                // Hide the button
+                document.getElementById("initialContent").style.display = "none";
+
+                //To show the hidden content
+                document.getElementById("hiddenContent1").style.display = "block";
+            }
+
+            function Change2() {
+                
+                // Hide the button
+                document.getElementById("hiddenContent1").style.display = "none";
+
+                //To show the hidden content
+                document.getElementById("hiddenContent2").style.display = "block";
+            }
+
+            function Change3() {
+                
+                // Hide the button
+                document.getElementById("hiddenContent2").style.display = "none";
+
+                //To show the hidden content
+                document.getElementById("hiddenContent3").style.display = "block";
+            }
+
+            function Change4() {
+                
+                // Hide the button
+                document.getElementById("hiddenContent3").style.display = "none";
+
+                //To show the hidden content
+                document.getElementById("hiddenContent4").style.display = "block";
+            }
+
+
+            function Change5() {
+                
+                // Hide the button
+                document.getElementById("hiddenContent4").style.display = "none";
+
+                //To show the hidden content
+                document.getElementById("hiddenContent5").style.display = "block";
+            }
+        </script>
+
+
+    </head>
+
+
+    <body>
+        <div id="initialContent" class="container">
+            <br>
+            <br>
+            <br>
+
+            <video width="640" height="360" controls>
+                <source src="Sohan.mp4" type="video/mp4">
+            </video>
+
+            <br> <br>
+            
+            <button onclick="Change1()" id="button-1" title="Click here">Next></button>
+
+        </div>
+
+        <div id="hiddenContent1" class="container">
+            <br>
+            <br>
+            <h3>Yeah!!! Thats right!!!</h3> <br> <br>
+            <h3>I got in touch with your friends!!!</h3> <br> <br>
+            <h3>This is why they acted suspicious that day</h3> <br> <br>
+
+            <button onclick="Change2()" id="button-2" title="Click here">WOW!!></button>
+
+        </div>
+
+
+        <div id="hiddenContent2" class="container">
+            <br>
+            <br>
+            <br>
+
+            <video width="640" height="360" controls>
+                <source src="Rahul.mp4" type="video/mp4">
+                <source src="Rijul.mp4" type="video/mp4">
+            </video>
+
+            <video width="640" height="360" controls>
+                <source src="Rijul.mp4" type="video/mp4">
+            </video>
+
+            
+
+            <br> <br>
+            
+            <button onclick="Change3()" id="button-3" title="Click here">Next></button>
+
+        </div>
+
+
+
+        <div id="hiddenContent3" class="container">
+            <br>
+            <br>
+            <br>
+
+            <video width="640" height="360" controls>
+                <source src="Gayatri.mp4" type="video/mp4">
+                
+            </video>
+
+            <br><br>
+            <h3>Look at that background!!!</h3>
+
+            <br> <br>
+
+
+            <button onclick="Change4()" id="button-4" title="Click here">Next></button>
+
+        </div>
+
+
+        <div id="hiddenContent4" class="container">
+            <br>
+            <br>
+            <h3>Gayatri and Sohan Helped sooooo much</h3> <br> <br>
+            <h3>I couldn't have gotten the videos on time without them</h3> <br> <br>
+            <h3>Give them a treat!!!</h3> <br> <br>
+
+            <button onclick="Change5()" id="button-5" title="Click here">WOW!!></button>
+
+        </div>
+
+    </body>
+</html>
